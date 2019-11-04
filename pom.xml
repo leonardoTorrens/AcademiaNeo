@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>Academia-java</groupId>
+	<artifactId>Academia</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<name>Academia</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- SpringSecurity -->
+		<dependency>
+ 			<groupId>org.springframework.security</groupId>
+ 			<artifactId>spring-security-web</artifactId>
+ 			<version>3.2.6.RELEASE</version>
+ 		</dependency>
+ 		<dependency>
+ 			<groupId>org.springframework.security</groupId>
+ 			<artifactId>spring-security-config</artifactId>
+ 			<version>3.2.6.RELEASE</version>
+ 		</dependency>
+ 		<dependency>
+ 			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+ 			<version>1.1.3</version>
+ 		</dependency>
+ 		
+</dependencies>
+
+	<modules>
+		<module>Academia-Entities</module>
+		<module>Academia-Services</module>
+		<module>Academia-Frontend</module>
+		<module>Academia-Backend</module>
+	</modules>
+	
+	<build>
+	<plugins>
+		<plugin>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<configuration>
+				<source>1.7</source>
+				<target>1.7</target>
+			</configuration>
+		</plugin>
+	</plugins>
+	</build>
+
+</project>
