@@ -10,4 +10,8 @@
 				http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 	<description>Contexto para la definicion de Business Objects</description>
 
+	<bean id="socio.bo" class="ar.com.softtek.academia.backend.bo.impl.SocioBOImpl"> 
+		<property name="socioDAO" ref="socio.dao" />
+	</bean>
+
 </beans>
